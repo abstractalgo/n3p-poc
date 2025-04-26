@@ -35,8 +35,6 @@
 
     // language and environment
     "target": "es2021",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "jsx": "react-jsx",
     "libReplacement": false,
 
     // completeness

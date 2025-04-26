@@ -8,8 +8,8 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "typecheck": "turbo run typecheck",
+    "lint": "bun run eslint --version && turbo run lint",
+    "typecheck": "bun run tsc --version && turbo run typecheck",
     "fmt": "prettier --write \"**/*.{ts,tsx,md,json,mjs}\""
   },
   "devDependencies": {

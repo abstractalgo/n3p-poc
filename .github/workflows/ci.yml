@@ -8,8 +8,8 @@ on:
   #     - master
 
 jobs:
-  ci:
-    name: CI
+  checks:
+    name: Checks
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

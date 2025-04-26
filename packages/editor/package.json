@@ -9,7 +9,7 @@
   },
   "scripts": {
     "typecheck": "tsc --version && tsc",
-    "lint": "eslint **/*.{ts,tsx}",
+    "lint": "eslint --version && eslint **/*.{ts,tsx}",
     "lint:ls": "ls-lint"
   },
   "dependencies": {

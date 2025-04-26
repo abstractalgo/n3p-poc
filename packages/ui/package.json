@@ -8,7 +8,7 @@
     "./setup-counter": "./utils/counter.ts"
   },
   "scripts": {
-    "lint": "eslint \"**/*.ts\"",
+    "lint": "eslint --version && eslint \"**/*.ts\"",
     "lint:ls": "ls-lint",
     "typecheck": "tsc --version && tsc"
   },

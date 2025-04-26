@@ -15,7 +15,7 @@ jobs:
 
       - uses: oven-sh/setup-bun@v2
 
-      - name: Bun version
+      - name: Show Bun version
         run: bun --version
 
       - name: Install dependencies

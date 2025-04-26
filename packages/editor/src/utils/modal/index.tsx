@@ -11,7 +11,7 @@ import { createPortal } from "react-dom";
 
 import "./modal.css";
 
-export { useModal } from "./useModal";
+export { useModal } from "./use-modal";
 
 function PortalImpl({
   onClose,

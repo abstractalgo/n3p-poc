@@ -7,22 +7,22 @@
     ".": "./src/index.ts",
     "./style.css": "./src/themes/editor.css"
   },
-  "devDependencies": {
-    "@types/uuid": "^10.0.0",
-    "eslint": "*",
-    "typescript": "*"
-  },
   "scripts": {
     "typecheck": "tsc --version && tsc",
-    "lint": "eslint **/*.{ts,tsx}"
+    "lint": "eslint **/*.{ts,tsx}",
+    "lint:ls": "ls-lint"
   },
   "dependencies": {
     "@lexical/react": "^0.30.0",
     "lexical": "^0.30.0",
-    "uuid": "^11.1.0"
-  },
-  "peerDependencies": {
+    "uuid": "^11.1.0",
     "classnames": "2.3.2",
     "react": "*"
+  },
+  "devDependencies": {
+    "@types/uuid": "^10.0.0",
+    "eslint": "*",
+    "typescript": "*",
+    "@ls-lint/ls-lint": "*"
   }
 }

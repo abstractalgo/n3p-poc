@@ -1,0 +1,15 @@
+ls:
+  .dir: kebab-case
+  .*: kebab-case
+  .md: SCREAMING_SNAKE_CASE
+
+  src:
+    .tsx: kebab-case | PascalCase
+
+    plugins/*:
+      .dir: PascalCase
+
+ignore:
+  - "**/node_modules"
+  - "**/.turbo"
+  - "**/dist"

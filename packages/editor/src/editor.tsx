@@ -2,7 +2,7 @@ import { ReactNode, useMemo } from "react";
 import { LexicalComposer } from "@lexical/react/LexicalComposer";
 import { ContentEditable } from "@lexical/react/LexicalContentEditable";
 import { LexicalErrorBoundary } from "@lexical/react/LexicalErrorBoundary";
-import { EXAMPLE_THEME } from "./themes/ExampleTheme";
+import { EXAMPLE_THEME } from "./themes/example-theme";
 import { SerializedEditorState } from "lexical";
 import { ToolbarUpdater } from "./Toolbar";
 import { Placeholder } from "./Placeholder";

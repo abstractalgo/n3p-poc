@@ -1,0 +1,9 @@
+ls:
+  .dir: kebab-case
+  .*: kebab-case
+  .md: SCREAMING_SNAKE_CASE
+
+ignore:
+  - "**/node_modules"
+  - "**/.turbo"
+  - "**/dist"

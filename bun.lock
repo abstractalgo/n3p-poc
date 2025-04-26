@@ -4,6 +4,7 @@
     "": {
       "name": "with-vite-react",
       "devDependencies": {
+        "@ls-lint/ls-lint": "^2.3.0",
         "eslint": "*",
         "prettier": "^3.5.3",
         "turbo": "^2.5.2",
@@ -18,6 +19,7 @@
         "react-dom": "^19.1.0",
       },
       "devDependencies": {
+        "@ls-lint/ls-lint": "*",
         "@repo/editor": "workspace:*",
         "@repo/eslint-config": "workspace:*",
         "@repo/typescript-config": "workspace:*",
@@ -33,17 +35,16 @@
       "name": "@repo/editor",
       "dependencies": {
         "@lexical/react": "^0.30.0",
+        "classnames": "2.3.2",
         "lexical": "^0.30.0",
+        "react": "*",
         "uuid": "^11.1.0",
       },
       "devDependencies": {
+        "@ls-lint/ls-lint": "*",
         "@types/uuid": "^10.0.0",
         "eslint": "*",
         "typescript": "*",
-      },
-      "peerDependencies": {
-        "classnames": "2.3.2",
-        "react": "*",
       },
     },
     "packages/eslint-config": {
@@ -51,6 +52,7 @@
       "version": "0.0.0",
       "devDependencies": {
         "@eslint/js": "^9.25.1",
+        "@ls-lint/ls-lint": "*",
         "@next/eslint-plugin-next": "^15.3.1",
         "eslint": "^9.25.1",
         "eslint-config-prettier": "^10.1.2",
@@ -66,6 +68,7 @@
       "name": "@repo/typescript-config",
       "version": "0.0.0",
       "devDependencies": {
+        "@ls-lint/ls-lint": "*",
         "typescript": "5.8.3",
       },
     },
@@ -77,6 +80,7 @@
         "react-dom": "^19.1.0",
       },
       "devDependencies": {
+        "@ls-lint/ls-lint": "*",
         "@repo/eslint-config": "workspace:*",
         "@repo/typescript-config": "workspace:*",
         "@types/react": "^19.1.2",
@@ -254,6 +258,8 @@
     "@lexical/utils": ["@lexical/utils@0.30.0", "", { "dependencies": { "@lexical/list": "0.30.0", "@lexical/selection": "0.30.0", "@lexical/table": "0.30.0", "lexical": "0.30.0" } }, "sha512-VJlAUhupCZmnbYYX3zMWovd4viu2guR01sAqKGbbOMbP+4rlaymixFbinvNPaRKDBloOARi+fpiveQFxnyr/Ew=="],
 
     "@lexical/yjs": ["@lexical/yjs@0.30.0", "", { "dependencies": { "@lexical/offset": "0.30.0", "@lexical/selection": "0.30.0", "lexical": "0.30.0" }, "peerDependencies": { "yjs": ">=13.5.22" } }, "sha512-mWGFAGpUPz4JoSV+Y0cZOzOZJoMLbVb/enldxEbV0xX71BBVzD0c0vjPxuaIJ9MtNkRZdK3eOubj+B45iOECtw=="],
+
+    "@ls-lint/ls-lint": ["@ls-lint/ls-lint@2.3.0", "", { "os": [ "linux", "win32", "darwin", ], "cpu": [ "x64", "arm64", "s390x", ], "bin": { "ls-lint": "bin/cli.js" } }, "sha512-lsT5/7SxtImOIjpefC9wcoXt2lkikKhCjd6U+Q9Z6X5h2HBU/71ggt+XStdodZ0HkJGO333zDUeec7JROMCPFw=="],
 
     "@next/eslint-plugin-next": ["@next/eslint-plugin-next@15.3.1", "", { "dependencies": { "fast-glob": "3.3.1" } }, "sha512-oEs4dsfM6iyER3jTzMm4kDSbrQJq8wZw5fmT6fg2V3SMo+kgG+cShzLfEV20senZzv8VF+puNLheiGPlBGsv2A=="],
 

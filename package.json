@@ -9,10 +9,12 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "bun run eslint --version && turbo run lint",
+    "lint:ls": "ls-lint && turbo run lint:ls",
     "typecheck": "bun run tsc --version && turbo run typecheck",
     "fmt": "prettier --write \"**/*.{ts,tsx,md,json,mjs}\""
   },
   "devDependencies": {
+    "@ls-lint/ls-lint": "^2.3.0",
     "eslint": "*",
     "prettier": "^3.5.3",
     "turbo": "^2.5.2"

@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint 'src'",
+    "lint:ls": "ls-lint",
     "typecheck": "tsc --version && tsc"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@ls-lint/ls-lint": "*",
     "@repo/editor": "workspace:*",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",

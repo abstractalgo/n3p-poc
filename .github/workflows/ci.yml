@@ -25,7 +25,9 @@ jobs:
         run: bun run typecheck
 
       - name: Lint
-        run: bun run lint
+        run: |
+          bun run lint
+          bun run lint:ls
 
       - name: Build
         run: bun run build

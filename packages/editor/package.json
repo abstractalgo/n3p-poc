@@ -1,0 +1,24 @@
+{
+  "name": "@repo/editor",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "module": "src/index.ts",
+  "devDependencies": {
+    "@types/uuid": "^10.0.0",
+    "eslint": "*",
+    "typescript": "*"
+  },
+  "scripts": {
+    "typecheck": "tsc --version && tsc",
+    "lint": "eslint **/*.{ts,tsx}"
+  },
+  "dependencies": {
+    "@lexical/react": "^0.30.0",
+    "lexical": "^0.30.0",
+    "uuid": "^11.1.0"
+  },
+  "peerDependencies": {
+    "classnames": "2.3.2",
+    "react": "*"
+  }
+}

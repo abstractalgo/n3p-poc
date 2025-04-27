@@ -6,14 +6,15 @@
     "allowUnusedLabels": false,
     "allowUnreachableCode": false,
     "noUnusedLocals": false,
-    "noFallthroughCasesInSwitch": true,
     "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
     "noImplicitThis": true,
     "useUnknownInCatchVariables": true,
     "noPropertyAccessFromIndexSignature": false,
-    "noImplicitReturns": false,
-    "noUncheckedIndexedAccess": false,
-    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitAny": true,
+    "exactOptionalPropertyTypes": false,
 
     // modules
     "module": "Preserve",
@@ -36,6 +37,7 @@
     // language and environment
     "target": "es2021",
     "libReplacement": false,
+    "useDefineForClassFields": true,
 
     // completeness
     "skipLibCheck": true,

@@ -19,9 +19,10 @@
     "react": "*"
   },
   "devDependencies": {
+    "@lexical/eslint-plugin": "^0.30.0",
+    "@ls-lint/ls-lint": "*",
     "@types/uuid": "^10.0.0",
     "eslint": "*",
-    "typescript": "*",
-    "@ls-lint/ls-lint": "*"
+    "typescript": "*"
   }
 }

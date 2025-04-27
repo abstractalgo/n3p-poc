@@ -1,5 +1,8 @@
+import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext";
 import {
   $applyNodeReplacement,
+  $getSelection,
+  $isNodeSelection,
   DecoratorNode,
   type EditorConfig,
   LexicalEditor,
@@ -8,7 +11,7 @@ import {
   SerializedLexicalNode,
   type Spread,
 } from "lexical";
-import { ReactNode } from "react";
+import { FC, ReactNode, useEffect, useState } from "react";
 import { v4 as uuid } from "uuid";
 
 export type SerializedMentionNode = Spread<
@@ -98,8 +101,52 @@ export class MentionNode extends DecoratorNode<ReactNode> {
         {this.__label}
       </code>
     );
+    // return (
+    //   <MentionNodeComp
+    //     label={this.__label}
+    //     mentiondId={this.__mentionId}
+    //     nodeKey={this.__key}
+    //     id={this.id}
+    //   />
+    // );
   }
 }
+
+// const MentionNodeComp: FC<{
+//   label: Label;
+//   mentiondId: MentionId;
+//   nodeKey: MentionNode["__key"];
+//   id: string;
+// }> = ({ label, mentiondId, nodeKey, id }) => {
+//   const [editor] = useLexicalComposerContext();
+//   const [isFocused, setIsFocused] = useState(false);
+
+//   useEffect(() => {
+//     return editor.registerUpdateListener(({ editorState }) => {
+//       const isSelected = editorState.read(() => {
+//         const selection = $getSelection();
+//         return (
+//           $isNodeSelection(selection) &&
+//           selection.has(nodeKey) &&
+//           selection.getNodes().length === 1
+//         );
+//       });
+//       setIsFocused(isSelected);
+//     });
+//   }, [editor, nodeKey]);
+
+//   return (
+//     <code
+//       data-mention-id={mentiondId}
+//       id={id}
+//       style={{
+//         border: `1px solid ${isFocused ? "red" : "transparent"}`,
+//       }}
+//     >
+//       {label}
+//     </code>
+//   );
+// };
 
 export function $createMentionNode(
   label: string,

@@ -110,9 +110,9 @@ function getDynamicOptions(editor: LexicalEditor, queryString: string) {
   const tableMatch = queryString.match(/^([1-9]\d?)(?:x([1-9]\d?)?)?$/);
 
   if (tableMatch !== null) {
-    const rows = tableMatch[1];
-    const colOptions = tableMatch[2]
-      ? [tableMatch[2]]
+    const rows = tableMatch[1] as string;
+    const colOptions = (tableMatch[2] as string)
+      ? [tableMatch[2] as string]
       : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(String);
 
     options.push(
@@ -133,6 +133,7 @@ function getDynamicOptions(editor: LexicalEditor, queryString: string) {
 
 type ShowModal = ReturnType<typeof useModal>[1];
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function getBaseOptions(editor: LexicalEditor, showModal: ShowModal) {
   return [
     new ComponentPickerOption("Paragraph", {

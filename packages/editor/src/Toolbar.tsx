@@ -136,7 +136,7 @@ export const ToolbarUpdater: FC<ToolbarUpdaterProps> = ({
       );
     }
 
-    const updateToolbar = () => {
+    const $updateToolbar = () => {
       const selection = $getSelection();
       if ($isRangeSelection(selection)) {
         ctx.setState({
@@ -153,13 +153,13 @@ export const ToolbarUpdater: FC<ToolbarUpdaterProps> = ({
       editor.registerUpdateListener(({ editorState }) => {
         editorState.read(() => {
           onChange?.(editorState.toJSON());
-          updateToolbar();
+          $updateToolbar();
         });
       }),
       editor.registerCommand(
         SELECTION_CHANGE_COMMAND,
         (/* _payload, newEditor */) => {
-          updateToolbar();
+          $updateToolbar();
           return false;
         },
         LowPriority,

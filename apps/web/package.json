@@ -26,6 +26,6 @@
     "@vitejs/plugin-react": "^4.4.1",
     "eslint": "*",
     "typescript": "*",
-    "vite": "npm:rolldown-vite@latest"
+    "vite": "^6.3.3"
   }
 }

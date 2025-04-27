@@ -8,7 +8,8 @@
     "./setup-counter": "./utils/counter.ts"
   },
   "scripts": {
-    "lint": "eslint \"**/*.ts\"",
+    "lint": "eslint --version && eslint \"**/*.ts\"",
+    "lint:ls": "ls-lint",
     "typecheck": "tsc --version && tsc"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@ls-lint/ls-lint": "*",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@repo/eslint-config": "workspace:*",

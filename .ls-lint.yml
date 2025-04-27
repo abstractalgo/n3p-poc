@@ -1,0 +1,13 @@
+ls:
+  .dir: kebab-case
+  .*: kebab-case
+  .md: SCREAMING_SNAKE_CASE
+
+ignore:
+  - packages # each package specifies its own lint
+  - apps # each app specifies its own lint
+  - "**/node_modules"
+  - .git
+  - .github
+  - "**/.turbo"
+  - "**/dist"

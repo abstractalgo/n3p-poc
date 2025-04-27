@@ -1,4 +1,4 @@
-import { nextJsConfig } from "@repo/eslint-config/next-js";
+import { config } from "@repo/eslint-config/react-internal";
 import { defineConfig } from "eslint/config";
 
-export default defineConfig(nextJsConfig);
+export default defineConfig(config);
